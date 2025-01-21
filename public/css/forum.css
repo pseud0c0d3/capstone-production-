@@ -1,0 +1,47 @@
+/* Adjusting button alignment within cards */
+.card .d-flex.justify-content-between {
+    justify-content: flex-end; /* Align buttons to the right */
+    align-items: center; /* Vertically center buttons */
+    gap: 10px; /* Add spacing between buttons */
+}
+
+/* Styling for buttons */
+.btn {
+    border-radius: 20px; /* Optional rounded button style */
+    padding: 8px 16px; /* Adjust button padding */
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #457b9d;
+    border-color: #457b9d;
+}
+
+.btn-primary:hover {
+    background-color: #1d3557;
+    border-color: #1d3557;
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.btn-light {
+    background-color: #f8f9fa;
+    border-color: #dee2e6;
+}
+
+.btn-light:hover {
+    background-color: #e2e6ea;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .card .d-flex.justify-content-between {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: flex-end; /* Align to the right on smaller screens */
+    }
+
+    .btn {
+        width: 100%; /* Buttons take full width on smaller screens */
+        text-align: center;
+        margin-bottom: 10px; /* Add spacing between stacked buttons */
+    }
+}
